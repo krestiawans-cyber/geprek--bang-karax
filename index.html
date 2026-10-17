@@ -46,7 +46,7 @@ header{position:sticky;top:0;z-index:5;background:#fffaf4ed;backdrop-filter:blur
 /* SETUP: Ganti NOMOR_WA dengan nomor WhatsApp bisnis, format kode negara tanpa + atau spasi.
    Contoh Indonesia: 6281234567890. Jangan gunakan nomor contoh ini sebagai nomor asli. */
 const NOMOR_WA = "6285888022484";
-const waNumber = NOMOR_WA.replace(/\D/g, "");
+const waNumber = NOMOR_WA.replaceconst NOMOR_WA = "6285888022484";
 function waUrl(item="Halo Geprek Bang Karax, saya ingin bertanya tentang menu.") {
   if (!waNumber) return "";
   return "https://wa.me/" + waNumber + "?text=" + encodeURIComponent(item);
